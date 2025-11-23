@@ -1,4 +1,38 @@
-!style=title
+!enter_slide=start9_final
+!exit_slide=stop9_final
+!style=title-half
+
+<script>
+var ii9 = false;
+
+var sol9 = <array:solutions9>;
+
+function start9_final() {
+    update9();
+    ii9 = setInterval(update9_final, 200);
+}
+function stop9_final() {
+    if (ii9 !== false) {
+        clearInterval(ii9)
+    }
+}
+function update9_final() {
+    var colors = ["black", "#FFD300", "#DEFF0A", "#A1FF0A", "#0AFF99", "#0AEFFF", "#147DF5", "#580AFF", "#BE0AFF", "#FFD300"];
+    var randsol = sol9[Math.floor(Math.random() * sol9.length)];
+    var img = ""
+    for (var i = 0; i < randsol.length; i++) {
+        img += "<rect width='" + (randsol[i][2] * 2) + "' height='" + (randsol[i][2] * 2) + "' x='" + (1 + randsol[i][0]*2) + "' y='" + (1 + randsol[i][1]*2) + "' fill='" + colors[randsol[i][2]] + "' stroke='black' stroke-width='0.2%' stroke-linecap='round' />"
+    }
+    
+    document.getElementById("grid9_final").innerHTML = img
+}
+
+</script>
+
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" height="55vh" style="position:absolute;left:80vw;top:50vh;transform:translate(-50%, -50%)" id='grid9_final'>
+</svg>
+
+
 <title>Thanks for listening</title>
 
 <author>

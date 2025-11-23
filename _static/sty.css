@@ -1,4 +1,4 @@
-/* fonts */
+    /* fonts */
 @font-face {
     font-family: 'comfortaaregular';
     src: url('comfortaa-regular-webfont.woff2') format('woff2'),
@@ -59,6 +59,11 @@ img.right-half {position:absolute;width:48vw;right:1vw;top:50vh;transform:transl
 .title.slide {background-color:#000000; color:#FFFFFF}
 .title.slide .title {text-align:center;font-size:15vh;font-family:ralewaysemibold;position:absolute;top:10vh;left:10vw;right:10vw}
 .title.slide .author {font-size:5vh;font-family:ralewaysemibold;position:absolute;top:50vh;left:35vw;right:35vw;text-align:center}
+
+/* title-half */
+.title-half.slide {background-color:#000000; color:#FFFFFF}
+.title-half.slide .title {text-align:center;font-size:12vh;font-family:ralewaysemibold;position:absolute;top:10vh;left:10vw;right:40vw}
+.title-half.slide .author {font-size:5vh;font-family:ralewaysemibold;position:absolute;top:50vh;left:15vw;right:45vw;text-align:center}
 
 /* final */
 .final.slide {background: linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 50%, #000000 50%, #000000 100%);color:#FFFFFF}
